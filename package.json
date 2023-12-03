@@ -1,5 +1,5 @@
 {
-  "name": "servidor1",
+  "name": "rest-api",
   "version": "0.0.1",
   "description": "app de el curso node de fernando herrera udemy",
   "main": "app.js",

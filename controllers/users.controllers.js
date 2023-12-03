@@ -1,5 +1,6 @@
 const { response, request} = require("express");
 
+//funciones que manejan la logica de 
 const usuariosGet = (req = request, res = response) => {
     const {q, nombre = "no name", apikey} = req.query;
     res.json({

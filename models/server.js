@@ -6,7 +6,7 @@ class Server {
         this.port = process.env.PORT;
         this.app = express();
 
-        //rutas
+        //rutas en el navegador
         this.rutasdeusuarios = "/api/usuarios";
 
         //Middlewares
@@ -25,6 +25,7 @@ class Server {
     }
 
     routes() {
+        //se separa la logica del manejo de rutas en un archivo /routes/nombreArchivo
         this.app.use(this.rutasdeusuarios, require("../routes/users.routes"));
 
 
